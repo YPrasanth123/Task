@@ -47,7 +47,7 @@
     background-color: hwb(60 97% 0%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     float: left;
-    margin: 24px;
+    margin: 22px;
     border-radius: 5px;
 }
 .img-card img{
@@ -58,16 +58,24 @@
     border-bottom:1px solid rgb(233, 229, 229);
 }
 section{
-    margin-left: 50px;
+    margin-left: 60px;
     margin-top: 25px;
 }
-.details{
+.details,p,span{
     padding: 8px;
-}
-span{
-    padding-top: 10px;
     font-size: 20px;
 }
+
+.bars p{
+    width: 20px;
+    min-height: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    padding: 1px;
+    margin: 5px;
+    display: none;
+}
+
 .details button{
     border-radius: 5px;
     display: block;
@@ -82,8 +90,66 @@ span{
 .details button:hover{
     background-color: rgb(243, 96, 28);
 }
-
-@media only screen and (max-width: 600px){
+@media only screen and (max-width:1290px){
+    .card{
+        margin: 19px;
+        
+    }
+    section{
+        margin-left: 38px;
+    }
+}
+@media only screen and (max-width:1240px){
+    .card{
+        margin: 17px;
+    }
+    section{
+        margin-left: 30px;
+    }
+}
+@media only screen and (max-width:1200px){
+    .card{
+        margin: 17px;
+    }
+    section{
+        margin-left: 16px;
+    }
+}
+@media only screen and (max-width:1100px){
+    .card{
+        width: 160px;
+        height: auto;
+        background-color: hwb(60 97% 0%);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        float: left;
+        margin: 32px;
+        border-radius: 5px;
+    }
+    .img-card img{
+        width: 160px;
+        height: 175px;
+        background-color: rgb(30, 167, 167);
+        border-bottom:1px solid rgb(233, 229, 229);
+    }
+    /* .nav-items{
+        padding-right: 0px;
+        width: 100%;
+    } */
+    section{
+        margin-left: 30px;
+        margin-top: 25px;
+    }
+   .details,p,span{
+        padding: 5px;
+        font-size: 14px;
+    }
+    .details button{
+        margin: 9px 0px 11px 2.1rem;
+        width: 65px;
+        padding: 5px;
+    }
+}
+@media only screen and (max-width: 850px){
     .nav-items a{
         text-decoration: none;
         color:rgb(250, 250, 250);
@@ -97,7 +163,7 @@ span{
     }
 }
 
-@media only screen and (max-width:390px){
+@media only screen and (max-width:550px){
     .card{
         width: 144px;
         height: auto;
@@ -115,10 +181,26 @@ span{
     }
     .nav-items{
         padding-right: 0px;
+        width: 100%;
+        display: none;
     }
     section{
         margin-left: 30px;
         margin-top: 25px;
+    }
+   .details,p,span{
+        padding: 5px;
+        font-size: 14px;
+    }
+    
+    .details button{
+        margin: 9px 0px 11px 2.2rem;
+        width: 65px;
+        padding: 5px;
+    }
+    .bars p{
+        display: block;
+        margin-right: 20px;
     }
 }
 
