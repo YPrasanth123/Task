@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .nav{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,26 +40,11 @@
 .logo:hover{
     color:rgb(240, 124, 30);
 }
-
-
-@media only screen and (max-width: 600px){
-    .nav-items a{
-        text-decoration: none;
-        color:rgb(250, 250, 250);
-        font-size: 16px;
-        padding: 5px 10px;
-    }
-    .logo{
-        color: white;
-        padding: 5px 25px;
-        font-size: 10px;
-    }
-}
 .card{
     min-width: auto;
     width: 200px;
     height: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: hwb(60 97% 0%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     float: left;
     margin: 24px;
@@ -69,14 +55,18 @@
     width: 200px;
     height: 220px;
     background-color: rgb(30, 167, 167);
-    border-bottom: rgb(99, 96, 96);
+    border-bottom:1px solid rgb(233, 229, 229);
 }
 section{
     margin-left: 50px;
     margin-top: 25px;
 }
 .details{
-    padding: 5px;
+    padding: 8px;
+}
+span{
+    padding-top: 10px;
+    font-size: 20px;
 }
 .details button{
     border-radius: 5px;
@@ -91,5 +81,44 @@ section{
 }
 .details button:hover{
     background-color: rgb(243, 96, 28);
+}
+
+@media only screen and (max-width: 600px){
+    .nav-items a{
+        text-decoration: none;
+        color:rgb(250, 250, 250);
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+    .logo{
+        color: white;
+        padding: 5px 25px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:390px){
+    .card{
+        width: 144px;
+        height: auto;
+        background-color: hwb(60 97% 0%);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        float: left;
+        margin: 10px;
+        border-radius: 5px;
+    }
+    .img-card img{
+        width: 144px;
+        height: 160px;
+        background-color: rgb(30, 167, 167);
+        border-bottom:1px solid rgb(233, 229, 229);
+    }
+    .nav-items{
+        padding-right: 0px;
+    }
+    section{
+        margin-left: 30px;
+        margin-top: 25px;
+    }
 }
 
