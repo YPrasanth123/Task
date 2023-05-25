@@ -48,7 +48,6 @@
     height: auto;
     background-color: hwb(60 97% 0%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    float: left;
     margin: 22px;
     border-radius: 5px;
 }
@@ -61,9 +60,12 @@
 }
 section{
     position: relative;
-    margin-left: 60px;
-    margin-top: 5rem;
+    margin-top: 4rem;
     z-index: -1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .details,p,span{
     padding: 8px;
